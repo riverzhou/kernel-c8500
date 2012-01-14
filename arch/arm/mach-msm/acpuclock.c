@@ -188,7 +188,7 @@ static struct clkctl_acpu_speed pll0_196_pll1_960_pll2_1056[] = {
 
 /* 7x27 normal with GSM capable modem */
 static struct clkctl_acpu_speed pll0_245_pll1_960_pll2_1200[] = {
-	{ 0, 19200, ACPU_PLL_TCXO, 0, 0, 19200, 0, 0, 30720 },
+//	{ 0, 19200, ACPU_PLL_TCXO, 0, 0, 19200, 0, 0, 30720 },
 #ifdef UNDERCLOCK_30720
        { 1, 30720, ACPU_PLL_0, 4, 7,  15360, 1, 1,  30720 },
 #endif
