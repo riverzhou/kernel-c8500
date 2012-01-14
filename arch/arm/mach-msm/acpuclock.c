@@ -18,17 +18,17 @@
  */
 
 #define UNDERCLOCK_30720
-#define UNDERCLOCK_49152
+//#define UNDERCLOCK_49152
 #define UNDERCLOCK_61440
 
-#define OVERCLOCK_614400
-#define OVERCLOCK_633600
+//#define OVERCLOCK_614400
+//#define OVERCLOCK_633600
 #define OVERCLOCK_652800
-#define OVERCLOCK_672000
+//#define OVERCLOCK_672000
 #define OVERCLOCK_691200
-#define OVERCLOCK_710400
+//#define OVERCLOCK_710400
 #define OVERCLOCK_729600
-#define OVERCLOCK_748800
+//#define OVERCLOCK_748800
 //#define OVERCLOCK_768000
 
 #include <linux/version.h>
@@ -198,14 +198,14 @@ static struct clkctl_acpu_speed pll0_245_pll1_960_pll2_1200[] = {
 #ifdef UNDERCLOCK_61440
        { 1, 61440, ACPU_PLL_0, 4, 3,  30720, 1, 2,  30720 },
 #endif
-	{ 0, 120000, ACPU_PLL_1, 1, 7,  60000, 1, 3,  61440 },
-	{ 1, 122880, ACPU_PLL_0, 4, 1,  61440, 1, 3,  61440 },
-	{ 0, 200000, ACPU_PLL_2, 2, 5,  66667, 2, 4,  61440 },
-	{ 1, 245760, ACPU_PLL_0, 4, 0, 122880, 1, 4,  61440 },
-	{ 1, 320000, ACPU_PLL_1, 1, 2, 160000, 1, 5, 122880 },
-	{ 0, 400000, ACPU_PLL_2, 2, 2, 133333, 2, 5, 122880 },
-	{ 1, 480000, ACPU_PLL_1, 1, 1, 160000, 2, 6, 122880 },
-	{ 1, 600000, ACPU_PLL_2, 2, 1, 200000, 2, 7, 122880 },
+//      { 0, 120000, ACPU_PLL_1, 1, 7,  60000, 1, 3,  61440 },
+        { 1, 122880, ACPU_PLL_0, 4, 1,  61440, 1, 3,  61440 },
+//      { 0, 200000, ACPU_PLL_2, 2, 5,  66667, 2, 4,  61440 },
+        { 1, 245760, ACPU_PLL_0, 4, 0, 122880, 1, 4,  61440 },
+        { 1, 352000, ACPU_PLL_1, 1, 2, 176000, 1, 5, 122880 },
+//      { 0, 400000, ACPU_PLL_2, 2, 2, 133333, 2, 5, 122880 },
+        { 1, 528000, ACPU_PLL_1, 1, 1, 176000, 2, 6, 122880 },
+        { 1, 600000, ACPU_PLL_2, 2, 1, 200000, 2, 7, 122880 },
 #ifdef OVERCLOCK_614400
          { 1, 614400, ACPU_PLL_2, 2, 1, 200000, 2, 7, 122880 },
  #endif
