@@ -38,6 +38,8 @@ function fcopy2cm7 {
 function fcopy2img {
 	echo "Copy boot.img to recovery image... "
 	cp release/c8500_boot.img 			/river/rom/river/boot.img
+	cp release/c8500_boot.img 			/river/rom/boot.img
+	cp release/c8500_boot.img 			/river/rom/
 #	cp drivers/staging/zram/zram.ko   		/river/rom/river/system/lib/modules/
 	echo "done."
 }
